@@ -1,0 +1,52 @@
+.rules-grid {
+	display: grid;
+	grid-template-columns: 1fr 320px;
+	gap: 24px;
+}
+
+.rules-list.card {
+	background: #ffffff;
+	padding: 24px;
+}
+
+.credits.card {
+	background: #ffffff;
+	padding: 24px;
+}
+
+.rules-list li {
+	margin-bottom: 12px;
+	line-height: 1.6;
+}
+
+.credits-links p {
+	margin: 6px 0;
+}
+
+.credits {
+	margin-top: 0;
+	gap: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 720px) {
+	.rules-grid {
+		grid-template-columns: 1fr;
+		gap: 12px;
+		padding: 0 12px;
+	}
+
+	.rules-list.card,
+	.credits.card {
+		padding: 16px;
+	}
+
+	.rules-list li {
+		font-size: 0.95rem;
+	}
+
+	.credits-links p {
+		font-size: 0.95rem;
+	}
+}
